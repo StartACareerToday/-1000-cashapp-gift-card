@@ -1,0 +1,118 @@
+/* styles.css */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Signika+Negative:wght@300..700&display=swap');
+
+
+
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-image {
+    width: 100%; /* Ensure the image takes up full width of its container */
+    max-width: 400px; /* Limit the maximum width of the image */
+    border-radius: 8px;
+    height: auto;
+    margin-bottom: 20px;
+    cursor: pointer; /* Change cursor on hover if it's clickable */
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50; 
+   font-size: 25px;
+   font-weight: 400;
+   font-family: Signika Negative, sans-serif;
+   /* Cash App green */
+}
+
+h2 {
+    color: #4CAF50; /* Cash App green */
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 17px;
+    font-family: Signika Negative, sans-serif;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #5489CF; /* Cash App green */
+    color: #fff;
+    text-decoration: none;
+    font-family: Oswald, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45A049; /* Darker shade of Cash App green */
+}
+
+@media (max-width: 600px) {
+    .landing-image {
+        max-width: 100%; /* Adjust image width to fit smaller screens */
+    }
+}
+
+.text-effect {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Oswald, sans-serif;
+}
+
+.text-effect span {
+  animation: rainbow 3s infinite;
+}
+
+@keyframes rainbow {
+  0%   { color: red; }
+  10%  { color: orange; }
+  20%  { color: yellow; }
+  30%  { color: green; }
+  40%  { color: blue; }
+  50%  { color: indigo; }
+  60%  { color: violet; }
+  70%  { color: purple; }
+  80%  { color: pink; }
+  90%  { color: coral; }
+  100% { color: red; }
+}
